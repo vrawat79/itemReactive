@@ -14,7 +14,8 @@ public class CouchbaseConfig extends AbstractReactiveCouchbaseConfiguration {
 	@Override
 	protected List<String> getBootstrapHosts() {
 		// TODO Auto-generated method stub
-		return Arrays.asList("52.26.69.69");
+//		return Arrays.asList("52.26.69.69");
+		return Arrays.asList("localhost");
 	}
 
 	@Override
