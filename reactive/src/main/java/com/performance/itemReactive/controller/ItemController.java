@@ -26,9 +26,9 @@ public class ItemController {
 	}
 
 	@PostMapping(path = "/items")
-	public Mono<Item> createBulkItems(@RequestBody Item item) {
+	public Flux<Item> createBulkItems(@RequestBody Flux<Item> itemFlux) {
 
-		return itemService.createItem(item);
+		return itemService.createAllItems(itemFlux);
 	}
 
 }
